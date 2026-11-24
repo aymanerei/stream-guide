@@ -21,12 +21,12 @@ Ouvrez l'application **Downloader** sur votre téléviseur ou votre box et saisi
 
 <div align="center">
 
-# `5925112`
+# `5982574`
 
 </div>
 
 1. Installez **Downloader** (by AFTVnews) depuis la boutique d'applications de votre appareil.
-2. Ouvrez Downloader et tapez le code **`5925112`** dans le champ de saisie, puis validez.
+2. Ouvrez Downloader et tapez le code **`5982574`** dans le champ de saisie, puis validez.
 3. Une fois le téléchargement terminé, choisissez **Installer**.
 4. Si l'appareil le demande, autorisez Downloader à installer des applications inconnues
    (Paramètres → Applications → Sources inconnues).
