@@ -1,15 +1,13 @@
 <div align="center">
 
-<img src="app/assets/logo_256.png" alt="Logo StreamGuide" width="128" height="128">
+<img src="logo.png" alt="Logo StreamGuide" width="128" height="128">
 
 # StreamGuide
 
-**Le lecteur IPTV pour Mac, Android et Android TV.**
+**Le lecteur IPTV pour Android, Android TV et Fire TV.**
 TV en direct, films, séries, guide des programmes et enregistrement, dans une seule application.
 
-![Version](https://img.shields.io/badge/version-0.1.0-38bdf8)
-![Plateformes](https://img.shields.io/badge/plateformes-macOS%20%7C%20Android%20%7C%20Android%20TV-0f172a)
-![Écrit en Rust](https://img.shields.io/badge/écrit%20en-Rust-b7410e)
+**Version 0.1.0** · Android · Android TV · Fire TV
 
 </div>
 
@@ -35,15 +33,15 @@ Ouvrez l'application **Downloader** sur votre téléviseur ou votre box et saisi
 
 ### Téléphone et tablette Android
 
-Téléchargez `StreamGuide-0.1.0-android-arm64.apk` depuis la page
-[Releases](https://github.com/aymanerei/tivimate/releases), ouvrez le fichier et acceptez l'installation.
+Téléchargez directement le fichier
+[`StreamGuide-0.1.0-android-arm64.apk`](https://github.com/aymanerei/stream-guide/releases/download/v0.1.0/StreamGuide-0.1.0-android-arm64.apk),
+ouvrez-le et acceptez l'installation.
 
-### Mac (Apple Silicon)
+Toutes les versions sont sur la page [Releases](https://github.com/aymanerei/stream-guide/releases).
 
-Téléchargez `StreamGuide-0.1.0-macos-arm64.dmg` depuis la page
-[Releases](https://github.com/aymanerei/tivimate/releases), ouvrez-le et glissez StreamGuide dans
-Applications. [VLC](https://www.videolan.org/vlc/) doit être installé : StreamGuide s'en sert pour
-décoder la vidéo.
+### Mac
+
+La version Mac (Apple Silicon) n'est pas encore publiée.
 
 ---
 
@@ -58,7 +56,6 @@ décoder la vidéo.
 | ⏺️ **Enregistrement** | Enregistrement des chaînes en direct et relecture. |
 | 👨‍👩‍👧 **Profils et code parental** | Profil enfant, catégories masquées, réglages verrouillés par code. |
 | 🔎 **Recherche** | Chaînes, films et séries dans une seule recherche. |
-| 🖥️ **Sur Mac** | Multi-écran, zapping instantané, pistes audio et sous-titres. |
 
 ---
 
@@ -68,44 +65,19 @@ décoder la vidéo.
 2. Ajoutez votre liste : identifiants **Xtream Codes** ou adresse d'un fichier **M3U**.
 3. Patientez pendant la première synchronisation (une à deux minutes pour un gros catalogue).
 
-### Options facultatives
+### Option facultative
 
-- **Clé TMDB** (gratuite, [themoviedb.org](https://www.themoviedb.org/)) : tendances de la semaine
-  sur l'accueil, recommandations par titre, synopsis en français.
-- **Clé OpenSubtitles** : recherche de sous-titres en ligne (Mac).
-
-Les deux se saisissent dans **Paramètres**.
+Une **clé TMDB** (gratuite, [themoviedb.org](https://www.themoviedb.org/)) ajoute les tendances de la
+semaine sur l'accueil, les recommandations par titre et des synopsis en français.
+Elle se saisit dans **Paramètres**.
 
 ---
 
 ## ⚠️ Limites connues
 
 - Le replay dépend de votre fournisseur.
-- Sur Android : pas de multi-écran réel, pas de choix de pistes audio ni de sous-titres.
+- Pas de multi-écran réel, pas de choix de pistes audio ni de sous-titres.
 - Pas de version Windows, Linux ni iOS pour l'instant.
-
----
-
-## 🛠️ Construire depuis les sources
-
-Le code est dans `app/` (Rust + [egui](https://github.com/emilk/egui)).
-
-```bash
-bash scripts/build_macos_dmg.sh
-```
-
-```bash
-bash scripts/build_android_apk.sh
-```
-
-Les fichiers produits arrivent dans `dist/`. La version Android demande le SDK et le NDK Android
-ainsi que [`cargo-apk`](https://github.com/rust-mobile/cargo-apk).
-
-Pour changer de logo, remplacez `app/assets/logo.jpeg` puis régénérez toutes les icônes :
-
-```bash
-python3 scripts/make_icons.py
-```
 
 ---
 
